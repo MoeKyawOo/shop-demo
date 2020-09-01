@@ -4,9 +4,8 @@ import '../models/shop_data_model.dart';
 
 class ShopItem extends StatelessWidget {
   final ShopDataModel detail;
-  final int index;
   final Function onTab;
-  ShopItem({this.detail, this.index, this.onTab});
+  ShopItem({this.detail, this.onTab});
 
   @override
   Widget build(BuildContext context) {
@@ -47,12 +46,6 @@ class ShopItem extends StatelessWidget {
           detail.distance,
           style:
               TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 20),
-          child: Text(
-            index.toString(),
-          ),
         ),
         Divider(),
       ],
