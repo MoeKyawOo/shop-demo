@@ -13,7 +13,6 @@ class AllShop extends StatelessWidget {
       itemBuilder: (context, index) {
         return ShopItem(
           detail: allShop[index],
-          index: index,
           onTab: () {
             Navigator.of(context)
                 .pushNamed(DetailPage.routeName, arguments: index);
